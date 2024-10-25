@@ -59,11 +59,8 @@ public class CustomList extends ArrayAdapter<City> {
      * @param city
      */
     public void addCity(City city){
-        if (cities.contains(city)){
-            throw new IllegalArgumentException();
-        }
         cities.add(city);
-
+        return;
     }
 
 }
